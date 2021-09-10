@@ -4,6 +4,8 @@
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 import function_calls
+import input_output
+import loops
 import nested_function
 import flow_control
 
@@ -139,16 +141,36 @@ if __name__ == '__main__':
     value = 10
     value_double = function_calls.calculate_double(value)
     print("The value double in main() is: {}".format(function_calls.x_global))
-
+    print("==========================")
     value = 10
     value_double = nested_function.outer_function(value)
 
     # Lambda Functions
+    print("========Lambda==========")
     function_double = lambda x: x * 2
     x = 10
     print("The x value is: {}".format(function_double(x)))
-
     # FLOW CONTROL
+    print("========Using If Statements===========")
     flow_control.flows()
+    flow_control.nested_ifs()
+
+    # LOOPS
+    loops.all_loops()
+    print("=========Using Range===========")
+    loops.using_range()
+    print("==========Using While===========")
+    loops.using_while()
+    print("==========Using Break===========")
+    loops.using_break()
+    print("=========Using While and Continue======")
+    loops.using_while_continue()
+
+    # INPUTS & OUTPUTS
+    # input_output.input_output()
+    input_output.file_writing()
+    input_output.file_append()
+    input_output.file_read()
+
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
